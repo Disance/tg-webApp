@@ -76,25 +76,25 @@ body {
     margin-top: 100px;
   }
   .car-info {
-    display: flex; /* Для создания горизонтального блока */
-    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap; /* Позволяет блокам переноситься */
+    background-color: white;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     margin: 20px auto;
-    border: 2px solid #3A3A8A;
   }
   
   .car-image img {
-    width: 300px; /* Ширина изображения */
-    height: auto; /* Автоматическая высота */
-    border-right: 1px solid #ddd; /* Разделительная линия */
+    width: 100%; /* Изображение растягивается на всю ширину */
+    height: auto;
+    max-width: 300px; /* Максимальная ширина изображения */
   }
   
   .car-details {
     padding: 20px;
-    flex: 1; /* Гибкость для растяжения содержимого */
+    flex: 1;
   }
   
   .car-details h2 {
@@ -108,4 +108,20 @@ body {
     font-size: 16px;
     color: #555;
     line-height: 1.5;
+  }
+  
+  /* Медиазапрос для мобильных устройств */
+  @media (max-width: 600px) {
+    .car-info {
+      flex-direction: column; /* Элементы располагаются вертикально */
+    }
+  
+    .car-image img {
+      width: 100%; /* Изображение на всю ширину экрана */
+      max-width: none; /* Убираем ограничение по ширине */
+    }
+  
+    .car-details {
+      text-align: center; /* Центрируем текст на мобильных */
+    }
   }
