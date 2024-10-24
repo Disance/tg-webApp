@@ -12,7 +12,6 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between; /* Распределение элементов */
-    padding: 0 20px; /* Отступы по краям */
   }
   
   .navbar a {
