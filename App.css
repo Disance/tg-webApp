@@ -28,7 +28,8 @@ body {
     margin-left: 20px;
   }
   .navbar a:nth-child(2) {
-    background-color: #1800ec; /* Цвет фона */
+    border: 3px solid #080896;
+    background-color: #030349; /* Цвет фона */
     color: black; /* Цвет текста */
     width: 25px;
     height: 25px; 
@@ -43,11 +44,6 @@ body {
 
   .navbar a.center {
     margin: 0 auto; /* Центрирование центрального элемента */
-  }
-  
-  .navbar a:hover {
-    background: #040475;
-    color: black;
   }
   
   .main {
