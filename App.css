@@ -1,9 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+
+
 body {
     margin: 0;
-    background-color: white;
+    background-color: #02022e;
   }
   
+  header {
+    position: fixed; /* Фиксируем хедер в верхней части */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ширина на всю страницу */
+    height: 70px; /* Высота хедера */
+    background-color: #0044cc; /* Цвет фона */
+    color: white; /* Цвет текста */
+    display: flex; /* Используем flex для центрирования текста */
+    align-items: center; /* Центрируем по вертикали */
+    justify-content: center; /* Центрируем по горизонтали */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Легкая тень для эффекта */
+    z-index: 1000; /* Чтобы хедер был всегда над контентом */
+  }
+  header h1{
+    font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  }
+
   .navbar {
+    border-top: 2px solid #1c1c8f;
     border-radius: 5px 5px;
     overflow: hidden;
     background-color: #02023d;
@@ -51,4 +75,3 @@ body {
     margin-bottom: 30px;
     height: 1500px;
   }
-  
