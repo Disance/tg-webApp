@@ -24,6 +24,9 @@ body {
     font-size: 17px;
   }
   
+  .navbar a:nth-child(1) {
+    margin-left: 20px;
+  }
   .navbar a:nth-child(2) {
     background-color: #1800ec; /* Цвет фона */
     color: black; /* Цвет текста */
@@ -33,7 +36,9 @@ body {
     display: flex; /* Для центрирования контента внутри */
     align-items: center; /* Центрировать по вертикали */
     justify-content: center; /* Центрировать по горизонтали */
-    padding-bottom: 10px;
+  }
+  .navbar a:nth-child(3) {
+   margin-right: 20px;
   }
 
   .navbar a.center {
