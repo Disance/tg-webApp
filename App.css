@@ -12,7 +12,7 @@ body {
     left: 0;
     width: 100%; /* Ширина на всю страницу */
     height: 70px; /* Высота хедера */
-    background-color: #0044cc; /* Цвет фона */
+    background-color: #011b50; /* Цвет фона */
     color: white; /* Цвет текста */
     display: flex; /* Используем flex для центрирования текста */
     align-items: center; /* Центрируем по вертикали */
